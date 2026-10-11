@@ -1,5 +1,14 @@
-# Logging section
-echo "Date and time: $(date)"
+
+#!/bin/bash
+
+echo "===== System Information ====="
+echo "Username: $(whoami)"
 echo "Hostname: $(hostname)"
-echo "Current user: $(whoami)"
-#ds1202-project
+echo "Date and Time: $(date)"
+echo "Operating System:"
+uname -a
+echo "Uptime:"
+uptime
+echo "Disk Usage:"
+df -h
+echo "=============================="
